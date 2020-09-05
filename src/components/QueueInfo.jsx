@@ -84,7 +84,7 @@ const QueueInfo = (props) => {
               },
               method: "POST",
             });
-            history.push("/");
+            history.push("/amc-frontend");
           }}
         >
           ПОКИНУТЬ ОЧЕРЕДЬ
