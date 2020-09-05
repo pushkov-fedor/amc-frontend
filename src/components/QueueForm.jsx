@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
+import { useHistory } from "react-router";
 
 export default function QueueForm() {
   const [name, setName] = useState("");
@@ -7,6 +8,8 @@ export default function QueueForm() {
   const [people, setPeople] = useState(1);
   const [timeH, setTimeH] = useState(20);
   const [timeM, setTimeM] = useState(35);
+
+  const history = useHistory();
 
   return (
     <div className="queueForm">
@@ -97,7 +100,12 @@ export default function QueueForm() {
         </div>
       </form>
       <div className="queueForm__controls d-flex flex-column">
-        <button className="mt-3 btn bg-purple text-white medium">
+        <button
+          className="mt-3 btn bg-purple text-white medium"
+          onClick={() => 
+            history.push("/queue-info")
+          }
+        >
           ВСТАТЬ В ОЧЕРЕДИ
         </button>
         <button className="mt-2 btn bg-white text-purple border-purple medium">

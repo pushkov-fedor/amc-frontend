@@ -1,13 +1,29 @@
 import React from "react";
 import QueueForm from "./components/QueueForm";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import QueueInfo from "./components/QueueInfo";
 
 function App() {
   return (
-    <div className="App">
-      <div className="container">
-        <QueueForm />
+    <Router>
+      <div className="App">
+        <div className="container">
+          <Switch>
+            <Route path="/queue-form">
+              <QueueForm />
+            </Route>
+            <Route path="/queue-info">
+              <QueueInfo />
+            </Route>
+          </Switch>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
