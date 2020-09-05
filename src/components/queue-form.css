@@ -2,6 +2,15 @@
   height: 100vh;
 }
 
+.queueForm__form {
+  flex: 1 0 auto;
+}
+
+.queueForm__controls {
+  flex-shrink: 0;
+  height: 250px;
+}
+
 #people-counter button {
   width: 31px;
   height: 31px;

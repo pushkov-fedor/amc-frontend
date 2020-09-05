@@ -6,6 +6,11 @@
   box-sizing: inherit;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -65,7 +70,16 @@ input {
 /* --------------------------- Queue info  -----------------------------*/
 
 .queueInfoContainer {
-  
+  height: 100vh;
+}
+
+.queueInfoContainer__container {
+  flex: 1 0 auto;
+}
+
+.queueInfoContainer__controls {
+  flex-shrink: 0;
+  height: 250px;
 }
 
 .queueInfoContainer h3 {

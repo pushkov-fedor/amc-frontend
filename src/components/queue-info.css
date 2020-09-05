@@ -1,0 +1,7 @@
+.queueInfoContainer__container {
+  flex: 1 0 auto;
+}
+
+.queueInfoContainer__controls {
+  flex-shrink: 0;
+}

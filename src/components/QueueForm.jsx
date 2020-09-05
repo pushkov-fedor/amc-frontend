@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+import "./queue-form.css";
 import { useHistory } from "react-router";
 
 export default function QueueForm() {
@@ -12,9 +12,9 @@ export default function QueueForm() {
   const history = useHistory();
 
   return (
-    <div className="queueForm">
-      <form className="queueForm__form d-flex flex-column pt-5">
-        <h1 className="text-center big-header bold pt-5 mb-4">
+    <div className="queueForm d-flex flex-column">
+      <form className="queueForm__form d-flex flex-column justify-content-center">
+        <h1 className="text-center big-header bold pb-3">
           Хочу посетить заведение
         </h1>
         <label htmlFor="name">ИМЯ</label>
@@ -28,7 +28,7 @@ export default function QueueForm() {
         />
         <label htmlFor="phone">ТЕЛЕФОН</label>
         <input
-          className="mb-4"
+          className="mb-3"
           type="tel"
           id="phone"
           placeholder="89139036130"
@@ -36,7 +36,7 @@ export default function QueueForm() {
           onChange={(e) => setPhone(e.target.value)}
         />
         <label htmlFor="people-counter">СКОЛЬКО ВАС БУДЕТ?</label>
-        <div id="people-counter" className="d-flex align-items-center mb-4">
+        <div id="people-counter" className="d-flex align-items-center mb-3">
           <button
             className="mr-3 border-purple text-purple bg-white d-flex align-items-center justify-content-center"
             onClick={(e) => {
@@ -65,7 +65,7 @@ export default function QueueForm() {
           </button>
         </div>
         <label htmlFor="people-counter">ВРЕМЯ ПОСЕЩЕНИЯ</label>
-        <div id="visit-time" className="mb-5">
+        <div id="visit-time">
           <input
             className="text-center mr-2"
             type="number"
@@ -102,9 +102,7 @@ export default function QueueForm() {
       <div className="queueForm__controls d-flex flex-column">
         <button
           className="mt-3 btn bg-purple text-white medium"
-          onClick={() => 
-            history.push("/queue-info")
-          }
+          onClick={() => history.push("/queue-info")}
         >
           ВСТАТЬ В ОЧЕРЕДИ
         </button>

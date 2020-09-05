@@ -6,20 +6,24 @@ import { useHistory } from "react-router";
 const QueueInfo = () => {
   const history = useHistory();
   return (
-    <div className="queueInfoContainer d-flex flex-column justify-content-center align-items-center position-relative">
-      <h1 className="text-center big-header mt-5">
-        Вы заняли очередь на посещение
-      </h1>
-      <QueueNumber number={"F2DJS32"} />
-      <QueueLineInfo label="Заведение" value="Mama Pizza" />
-      <QueueLineInfo label="Время ожидания" value="~ 15 мин." />
-      <QueueLineInfo label="Перед вами" value="7 чел." />
-      <button
-        className="btn bg-purple mt-5 text-white w-100"
-        onClick={() => history.push("/queue-form")}
-      >
-        Покинуть очередь
-      </button>
+    <div className="queueInfoContainer d-flex flex-column">
+      <div className="queueInfoContainer__container d-flex flex-column justify-content-center align-itesms-center">
+        <h1 className="text-center big-header">
+          Вы заняли очередь на посещение
+        </h1>
+        <QueueNumber number={"F2DJS32"} />
+        <QueueLineInfo label="Заведение" value="Mama Pizza" />
+        <QueueLineInfo label="Время ожидания" value="~ 15 мин." />
+        <QueueLineInfo label="Перед вами" value="7 чел." />
+      </div>
+      <div className="queueInfoContainer__controls">
+        <button
+          className="btn bg-purple text-white w-100 mt-3 medium"
+          onClick={() => history.push("/queue-form")}
+        >
+          ПОКИНУТЬ ОЧЕРЕДЬ
+        </button>
+      </div>
     </div>
   );
 };
