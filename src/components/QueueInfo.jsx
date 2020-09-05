@@ -84,7 +84,7 @@ const QueueInfo = (props) => {
               },
               method: "POST",
             });
-            history.push("/queue-form");
+            history.push("/");
           }}
         >
           ПОКИНУТЬ ОЧЕРЕДЬ

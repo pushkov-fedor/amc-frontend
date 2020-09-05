@@ -9,7 +9,7 @@ function App() {
       <div className="App">
         <div className="container">
           <Switch>
-            <Route path="/queue-form">
+            <Route path="/">
               <QueueForm />
             </Route>
             <Route path="/queue-info">
