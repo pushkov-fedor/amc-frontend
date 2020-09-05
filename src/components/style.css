@@ -1,0 +1,33 @@
+.queueForm {
+  height: 100vh;
+}
+
+#people-counter button {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+}
+
+#people-counter button:first-child {
+  border-width: 2px;
+  border-style: solid;
+}
+
+#people-counter button:last-child {
+  border: none;
+}
+
+#people-counter input {
+  width: 56px;
+}
+
+/* -------------- */
+
+#visit-time input {
+  width: 63px;
+  height: 40px;
+}
+
+#visit-time span {
+  font-size: 1.5rem;
+}
