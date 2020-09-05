@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./queue-form.css";
 import { useHistory } from "react-router";
+import { URL } from "../constants";
 
 export default function QueueForm() {
   const [name, setName] = useState("");
@@ -8,6 +9,10 @@ export default function QueueForm() {
   const [people, setPeople] = useState(1);
   const [timeH, setTimeH] = useState(20);
   const [timeM, setTimeM] = useState(35);
+
+  const queueId = window.AndroidFunction
+    ? window.AndroidFunction.getId()
+    : "5f53cb41900ab5746f165089";
 
   const history = useHistory();
 
@@ -102,11 +107,37 @@ export default function QueueForm() {
       <div className="queueForm__controls d-flex flex-column">
         <button
           className="mt-3 btn bg-purple text-white medium"
-          onClick={() => history.push("/queue-info")}
+          onClick={() => {
+            fetch(`${URL}/queue/join?queueId=${queueId}`, {
+              headers: {
+                Accept: "application/json",
+              },
+              method: "POST",
+            })
+              .then((response) => {
+                if (!response.ok) throw Error(response.statusText);
+                return response.json();
+              })
+              .then(({ response }) => {
+                const { queueInnerId, beforeYou } = response;
+                history.push({
+                  pathname: "/queue-info",
+                  state: { queueInnerId, beforeYou },
+                });
+              })
+              .catch((err) => console.error(err));
+          }}
         >
           ВСТАТЬ В ОЧЕРЕДИ
         </button>
-        <button className="mt-2 btn bg-white text-purple border-purple medium">
+        <button
+          className="mt-2 btn bg-white text-purple border-purple medium"
+          onClick={() => {
+            if (window.AndroidFunction) {
+              window.AndroidFunction.back();
+            }
+          }}
+        >
           НАЗАД
         </button>
       </div>
