@@ -121,7 +121,7 @@ export default function QueueForm() {
               .then(({ response }) => {
                 const { queueInnerId, beforeYou } = response;
                 history.push({
-                  pathname: "amc-frontend/queue-info",
+                  pathname: "/amc-frontend/queue-info",
                   state: { queueInnerId, beforeYou },
                 });
               })

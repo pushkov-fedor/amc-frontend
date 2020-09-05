@@ -9,10 +9,10 @@ function App() {
       <div className="App">
         <div className="container">
           <Switch>
-            <Route path="/">
+            <Route exact path="/amc-frontend/">
               <QueueForm />
             </Route>
-            <Route path="/queue-info">
+            <Route path="/amc-frontend/queue-info">
               <QueueInfo />
             </Route>
           </Switch>
