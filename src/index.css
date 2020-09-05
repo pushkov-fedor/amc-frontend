@@ -61,3 +61,42 @@ input {
   color: #333333;
   padding: 0 1rem;
 }
+
+/* --------------------------- Queue info  -----------------------------*/
+
+.queueInfoContainer {
+  
+}
+
+.queueInfoContainer h3 {
+  color: #6b6c6e;
+  font-size: medium;
+  text-transform: uppercase;
+}
+
+.queueNumberContainer h3 {
+  text-align: center;
+}
+
+.queueLineContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.queueLineContainer div {
+  padding: 10px;
+}
+
+.left {
+  text-align: right;
+}
+
+.right {
+  text-align: left;
+}
+
+.right h3 {
+  color: black;
+  text-transform: none;
+}
