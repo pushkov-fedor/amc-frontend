@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c24f524.chunk.css",
-    "main.js": "/static/js/main.7f440f10.chunk.js",
-    "main.js.map": "/static/js/main.7f440f10.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e47e13f6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e47e13f6.js.map",
-    "static/css/2.8aa5a7f8.chunk.css": "/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.340e8225.chunk.js": "/static/js/2.340e8225.chunk.js",
-    "static/js/2.340e8225.chunk.js.map": "/static/js/2.340e8225.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.f9e2e07bcb8c58c49e9eee058d571397.js": "/precache-manifest.f9e2e07bcb8c58c49e9eee058d571397.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.8aa5a7f8.chunk.css.map": "/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.5c24f524.chunk.css.map": "/static/css/main.5c24f524.chunk.css.map",
-    "static/js/2.340e8225.chunk.js.LICENSE.txt": "/static/js/2.340e8225.chunk.js.LICENSE.txt"
+    "main.css": "/amc-frontend/static/css/main.c2c93962.chunk.css",
+    "main.js": "/amc-frontend/static/js/main.7cb7130e.chunk.js",
+    "main.js.map": "/amc-frontend/static/js/main.7cb7130e.chunk.js.map",
+    "runtime-main.js": "/amc-frontend/static/js/runtime-main.a7412e6f.js",
+    "runtime-main.js.map": "/amc-frontend/static/js/runtime-main.a7412e6f.js.map",
+    "static/css/2.8aa5a7f8.chunk.css": "/amc-frontend/static/css/2.8aa5a7f8.chunk.css",
+    "static/js/2.340e8225.chunk.js": "/amc-frontend/static/js/2.340e8225.chunk.js",
+    "static/js/2.340e8225.chunk.js.map": "/amc-frontend/static/js/2.340e8225.chunk.js.map",
+    "index.html": "/amc-frontend/index.html",
+    "precache-manifest.12ab9a2fa56c897bdbc9d52749bccb3d.js": "/amc-frontend/precache-manifest.12ab9a2fa56c897bdbc9d52749bccb3d.js",
+    "service-worker.js": "/amc-frontend/service-worker.js",
+    "static/css/2.8aa5a7f8.chunk.css.map": "/amc-frontend/static/css/2.8aa5a7f8.chunk.css.map",
+    "static/css/main.c2c93962.chunk.css.map": "/amc-frontend/static/css/main.c2c93962.chunk.css.map",
+    "static/js/2.340e8225.chunk.js.LICENSE.txt": "/amc-frontend/static/js/2.340e8225.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e47e13f6.js",
+    "static/js/runtime-main.a7412e6f.js",
     "static/css/2.8aa5a7f8.chunk.css",
     "static/js/2.340e8225.chunk.js",
-    "static/css/main.5c24f524.chunk.css",
-    "static/js/main.7f440f10.chunk.js"
+    "static/css/main.c2c93962.chunk.css",
+    "static/js/main.7cb7130e.chunk.js"
   ]
 }
