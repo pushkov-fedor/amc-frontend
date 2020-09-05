@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/amc-frontend/static/css/main.c2c93962.chunk.css",
-    "main.js": "/amc-frontend/static/js/main.7cb7130e.chunk.js",
-    "main.js.map": "/amc-frontend/static/js/main.7cb7130e.chunk.js.map",
+    "main.js": "/amc-frontend/static/js/main.f50a2845.chunk.js",
+    "main.js.map": "/amc-frontend/static/js/main.f50a2845.chunk.js.map",
     "runtime-main.js": "/amc-frontend/static/js/runtime-main.a7412e6f.js",
     "runtime-main.js.map": "/amc-frontend/static/js/runtime-main.a7412e6f.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/amc-frontend/static/css/2.8aa5a7f8.chunk.css",
     "static/js/2.340e8225.chunk.js": "/amc-frontend/static/js/2.340e8225.chunk.js",
     "static/js/2.340e8225.chunk.js.map": "/amc-frontend/static/js/2.340e8225.chunk.js.map",
     "index.html": "/amc-frontend/index.html",
-    "precache-manifest.12ab9a2fa56c897bdbc9d52749bccb3d.js": "/amc-frontend/precache-manifest.12ab9a2fa56c897bdbc9d52749bccb3d.js",
+    "precache-manifest.829e4d506b13377aca0a09356a3146bc.js": "/amc-frontend/precache-manifest.829e4d506b13377aca0a09356a3146bc.js",
     "service-worker.js": "/amc-frontend/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/amc-frontend/static/css/2.8aa5a7f8.chunk.css.map",
     "static/css/main.c2c93962.chunk.css.map": "/amc-frontend/static/css/main.c2c93962.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.8aa5a7f8.chunk.css",
     "static/js/2.340e8225.chunk.js",
     "static/css/main.c2c93962.chunk.css",
-    "static/js/main.7cb7130e.chunk.js"
+    "static/js/main.f50a2845.chunk.js"
   ]
 }
